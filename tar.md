@@ -41,7 +41,7 @@ Files that use the format `.tgz` are the same as `tar.gz` but they are not as co
 
 ### Other compression options
 
-While Gzip is the most common, there are 2 others that are in use:
+While Gzip is the most common, there are others that are in use:
 
 - `Bzip2`
 - `XZ`
