@@ -8,7 +8,7 @@
 - `v`: **V**erbose mode to provide information about the compression process within the terminal. 
 - `f`: Specify the **f**ile name of the archive. 
 
-It's also possible to integrate the gzip utility in order to **compresss** an archive so it uses less space on the disk. This is done using the `z` option within tar. 
+It's also possible to integrate the gzip utility in order to **compress** an archive so it uses less space on the disk. This is done using the `z` option within tar if using Gzip as the compression tool. 
 
 `tar -cvzf <name of archive.tar.gz> /path/to/directory-or-file`
 
