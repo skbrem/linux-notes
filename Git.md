@@ -33,12 +33,22 @@ tags:
 | Making a commit with message | `git commit -m 'message'` |
 | Commit every unstaged changed | `git commit -am 'message'` |
 
-## Switching branches
+## Branches
 
 | Description | Command |
 | --- | --- |
 | Switching to a different branch | `git switch <name> or <git checkout <name>` |
-| Creating a branch | 
+| Creating a branch | `git switch -c` or `git checkout -b` |
+| Listing branches | `git branch` |
+| Listing branches by the last that was committed to | `git branch --sort-committerdate` |
+| Deleting a branch | `git branch -d <name>` |
+| Force deleting a branch | `git branch -D <name>` |
+
+## Diff Staged/Unstaged
+
+| Description | Command |
+| --- | --- |
+
 
 
 
