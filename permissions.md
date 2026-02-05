@@ -14,8 +14,7 @@ drwxr-xr-x. 4 root root    68 Jun 13 20:25 tuned
 
 ## How to Read File Permission
 
-> [!note]
-> `rw-r--r--`
+`rw-r--r--`
 
 These represent 3 separate items:
 
@@ -27,12 +26,12 @@ The first applies to the owner of the file. The second applies to the group that
 
 When permissions are set using letters, it's known as **symbolic** mode. 
 
-- User: `u`
-- Group: `g`
-- Others: `o`
-- Read: `r`
-- Write: `w`
-- Execute: `x`
+- User:     `u`
+- Group :   `g`
+- Others:   `o`
+- Read:     `r`
+- Write:    `w`
+- Execute:  `x`
 
 ## Octal Values
 
@@ -65,4 +64,18 @@ The execute permissions allows the user to execute the contents of a file. This 
 
 ## Understanding Directory Permissions
 
+A `d` signifies the directory file type. Although permissions act the same way for directories, they are interpreted differently. 
 
+### Read (r)
+
+The read permission allows the user to view the files within a directory. This permission is required when attempting to use `ls` and other similar commands. 
+
+### Write (w)
+
+Allows a user to modify the contents of a directory, which means either adding or removing files from a directory. Commands like `mv` and `rm` require the write permission to function. Write is also needed in order to create new files with `touch` or to copy files with `cp` from and into the directory.
+
+### Execute (x)
+
+Execute in regard to directories is very different to files. It's easy to understand it as providing access to the directory. It authorizes a user to view extended information about a directory, such as using `ls -l`, which also allowing a user to change to the directory using `cd` and to pass through the directory to subdirectories. 
+
+Without the execute permission, 
