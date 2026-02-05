@@ -14,5 +14,5 @@ drwxr-xr-x. 4 root root    68 Jun 13 20:25 tuned
 
 ## How to Read File Permission
 
-> [!example]
+> [!note]
 > `rw-r--r--`
