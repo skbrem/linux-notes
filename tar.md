@@ -8,7 +8,7 @@
 - `v`: **V**erbose mode to provide information about the compression process within the terminal. 
 - `f`: Specify the **f**ile name of the archive. 
 
-It's also possible to integrate the gzip utility in order to **compress** an archive so it uses less space on the disk. This is done using the `z` option within tar if using Gzip as the compression tool. 
+It's also possible to integrate the gzip utility in order to **compress** an archive so it uses less space on the disk. This is done using the `z` option within tar if using the Gzip tool for compression. 
 
 `tar -cvzf <name of archive.tar.gz> /path/to/directory-or-file`
 
@@ -56,3 +56,7 @@ These can be implemented in the following way:
 | .tar.zst | --zstd | Very fast | Great | Moderate | Modern cloud backups |
 | .tar.xz | -J | Slowest | Best | High | Software distribution (Kernel) and long-term cold storage |
 | .tar.bz2 | -j | Slow | Great | Moderate | Legacy systems; largely being replaced |
+
+Zstd has become the standard in much of the modern DevOps and cloud world and is superior to other choices in virtually every metric. Use the following to create a `.tar.zst` compressed archive. 
+
+`tar --zstd -cvf <name-of-archive.tar.zst>` 
