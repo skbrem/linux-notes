@@ -5,7 +5,7 @@ tags:
   - security
 ---
 
-The [[ls]] command provides metadata about files on a Linux system.
+The `ls` command provides metadata about files on a Linux system.
 
 ```bash
 $ ls -l
