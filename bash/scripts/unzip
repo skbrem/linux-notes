@@ -1,0 +1,7 @@
+!#/bin/bash
+
+echo "let's find that archived file and open it up for you!"
+
+tar -xvzf debian-cd_info.tar.gz 
+
+echo "There we go, it should be ready to go!"

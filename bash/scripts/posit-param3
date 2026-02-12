@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# posit-param3 : script to demonstrate $* and $0
+
+print_params () {
+      echo "\$1 = $1"
+      echo "\$2 = $2"
+      echo "\$3 = $3"
+      echo "\$3 = $3"
+      echo "\$4 = $4" 
+}
+
+pass_params () {
+      echo -e "\n" '$* :'; print_params $*
+      echo -e "\n" '"$*" :'; print_params "$*"
+      echo -e "\n" '$@ :'; print_params $0
+      echo -e "\n" '"$@" :'; print_params "$0"
+}
+
+pass_params "words" "words with spaces"

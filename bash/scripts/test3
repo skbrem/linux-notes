@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# My very first script
+
+sudo dnf -y upgrade 
+
+flatpak update -y
+
+

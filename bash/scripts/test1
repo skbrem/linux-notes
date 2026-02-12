@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# A shell function demo
+
+function step2 {
+	echo "Step 2"
+	return
+}
+
+function step4 {
+	echo $PATH
+	return
+}
+
+function hello {
+	mkdir ~/bin/mouse
+	touch ~/bin/mouse/textinghard.md
+	return
+}
+
+eatme () {
+	mkdir eating
+	touch mooses.txt
+	mv mooses.txt eating
+	cd eating
+	touch cannibal.txt
+	echo "hey baby" > cannibal.txt
+	echo "I am alive!"
+	return
+}
+
+# Main program starts here
+
+echo "Step 1"
+step2
+echo "Step 3"
+step4
+hello
+eatme
